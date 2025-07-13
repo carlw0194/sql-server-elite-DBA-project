@@ -1,0 +1,23 @@
+# ------------------------------------------------------------
+# SQL Server Elite DBA Project – Git ignore rules
+# ------------------------------------------------------------
+# 1. Keep secrets out of source control
+# 2. Ignore IDE / OS temp files
+# 3. Ignore local tooling artifacts
+# ------------------------------------------------------------
+
+# ─── Docker Compose override files (contain passwords) ──────
+# Each developer keeps their own override with secrets.
+**/*override.yml
+
+# ─── Performance Monitor binary logs ─────────────────────────
+*.blg
+
+# ─── OS / Editor noise ──────────────────────────────────────
+Thumbs.db
+.DS_Store
+~$*
+
+# ─── Python / Node cache (if added later) ───────────────────
+__pycache__/
+node_modules/
